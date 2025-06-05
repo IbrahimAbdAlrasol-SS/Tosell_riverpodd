@@ -30,7 +30,7 @@ import 'package:Tosell/Features/profile/screens/transaction_details_screen.dart'
 import 'package:Tosell/Features/auth/login/ForgotPassword/ForgotPasswordAuth.dart';
 import 'package:Tosell/Features/auth/login/ForgotPassword/ForgotPasswordNumber.dart';
 import 'package:Tosell/Features/auth/login/ForgotPassword/ForgotPasswordNumberNamePass.dart';
-
+import 'package:Tosell/Features/shipments/screens/orders_and_shipments_screen.dart';
 String initialLocation = AppRoutes.login;
 
 final GlobalKey<NavigatorState> _rootNavigatorKey =
@@ -186,14 +186,17 @@ final GoRouter appRouter = GoRouter(
             transitionsBuilder: _slideFromLeftTransition,
           ),),
          GoRoute(
-          path: AppRoutes.orders,
-          pageBuilder: (context, state) => CustomTransitionPage(
-            key: state.pageKey,
-            child:  BackgroundWrapper(child: OrdersScreen(
-              filter: state.extra as OrderFilter?,
-            )),
-            transitionsBuilder: _slideFromLeftTransition,
-          ),),
+  path: AppRoutes.orders,
+  pageBuilder: (context, state) => CustomTransitionPage(
+    key: state.pageKey,
+    child: BackgroundWrapper(
+      child: OrdersAndShipmentsScreen(
+        filter: state.extra as OrderFilter?,
+      ),
+    ),
+    transitionsBuilder: _slideFromLeftTransition,
+  ),
+),
          GoRoute(
           path: AppRoutes.myProfile,
           pageBuilder: (context, state) => CustomTransitionPage(
