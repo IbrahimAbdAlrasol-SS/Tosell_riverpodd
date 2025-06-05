@@ -1,5 +1,5 @@
 import 'package:Tosell/Features/orders/models/Order.dart';
-import 'package:Tosell/Features/orders/services/orders_service.dart';
+import 'package:Tosell/Features/shipments/services/services/orders_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:Tosell/core/utils/GlobalToast.dart';
@@ -75,7 +75,8 @@ class CreateShipmentNotifier extends StateNotifier<AsyncValue<void>> {
       
       state = const AsyncValue.data(null);
       
-      GlobalToast.showSuccess(
+      // Use regular GlobalToast.show with success styling
+      GlobalToast.show(
         message: "تم إنشاء الشحنة بنجاح",
         backgroundColor: Colors.green,
         textColor: Colors.white,
