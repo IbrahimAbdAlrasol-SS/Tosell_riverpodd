@@ -1,10 +1,11 @@
+import 'package:Tosell/Features/orders/models/Order.dart';
+import 'package:Tosell/Features/orders/models/order_enum.dart';
 import 'package:gap/gap.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter/material.dart';
 import 'package:Tosell/core/constants/spaces.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:Tosell/Features/shipments/models/Order.dart';
-import 'package:Tosell/Features/shipments/models/order_enum.dart';
+
 import 'package:Tosell/Features/shipments/providers/orders_selection_provider.dart';
 
 class OrderCardItem extends ConsumerWidget {

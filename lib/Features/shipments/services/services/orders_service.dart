@@ -1,6 +1,6 @@
+import 'package:Tosell/Features/orders/models/Order.dart';
 import 'package:Tosell/core/Client/BaseClient.dart';
 import 'package:Tosell/core/Client/ApiResponse.dart';
-import 'package:Tosell/Features/shipments/models/Order.dart';
 import 'package:Tosell/Features/order/models/add_order_form.dart';
 
 class OrdersService {

@@ -1,4 +1,4 @@
-import 'package:Tosell/Features/shipments/models/Shipment';
+import 'package:Tosell/Features/shipments/models/Shipment.dart';
 import 'package:Tosell/core/Client/BaseClient.dart';
 import 'package:Tosell/core/Client/ApiResponse.dart';
 

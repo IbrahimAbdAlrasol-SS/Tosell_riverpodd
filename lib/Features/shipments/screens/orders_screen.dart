@@ -1,9 +1,9 @@
-import 'package:Tosell/Features/shipments/models/Order.dart';
-import 'package:Tosell/Features/shipments/models/OrderFilter.dart';
-import 'package:Tosell/Features/shipments/models/order_enum.dart';
-import 'package:Tosell/Features/shipments/providers/orders_provider.dart';
+import 'package:Tosell/Features/orders/models/Order.dart';
+import 'package:Tosell/Features/orders/models/OrderFilter.dart';
+import 'package:Tosell/Features/orders/providers/orders_provider.dart';
+import 'package:Tosell/Features/orders/screens/orders_filter_bottom_sheet.dart';
+
 import 'package:Tosell/Features/shipments/providers/orders_selection_provider.dart';
-import 'package:Tosell/Features/shipments/screens/orders_filter_bottom_sheet.dart';
 import 'package:Tosell/Features/shipments/widgets/order_card_item.dart';
 import 'package:gap/gap.dart';
 import 'package:flutter_svg/svg.dart';

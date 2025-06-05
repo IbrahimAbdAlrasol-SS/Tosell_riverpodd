@@ -1,9 +1,10 @@
+import 'package:Tosell/Features/orders/models/Order.dart';
 import 'package:Tosell/Features/orders/services/orders_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:Tosell/Features/shipments/models/Order.dart';
-import 'package:Tosell/Features/shipments/services/orders_service.dart';
+
 import 'package:Tosell/core/utils/GlobalToast.dart';
 import 'package:flutter/material.dart';
+
 
 // Provider for managing selected orders
 final selectedOrdersProvider = StateNotifierProvider<SelectedOrdersNotifier, List<String>>((ref) {

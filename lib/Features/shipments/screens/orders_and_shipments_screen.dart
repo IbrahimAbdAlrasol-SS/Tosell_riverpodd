@@ -1,3 +1,4 @@
+import 'package:Tosell/Features/orders/models/OrderFilter.dart';
 import 'package:Tosell/Features/orders/screens/orders_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -5,8 +6,8 @@ import 'package:gap/gap.dart';
 import 'package:Tosell/core/constants/spaces.dart';
 import 'package:Tosell/core/widgets/CustomAppBar.dart';
 import 'package:Tosell/Features/shipments/screens/orders_screen.dart';
-import 'package:Tosell/Features/shipments/screens/shipments_screen.dart';
-import 'package:Tosell/Features/shipments/models/OrderFilter.dart';
+import 'package:Tosell/Features/shipments/screens/orders_and_shipments_screen.dart';
+
 
 class OrdersAndShipmentsScreen extends ConsumerStatefulWidget {
   final OrderFilter? filter;
